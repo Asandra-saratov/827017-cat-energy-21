@@ -51,17 +51,17 @@
         <fieldset class="form__fieldset">
           <ul class="form__list">
             <li class="form__item">
-              <label class="form__label" for="cat-name-id">Имя</label>
+              <label class="form__label form__field--required" for="cat-name-id">Имя:</label>
               <input class="form__field" type="text" name="cat-name" id="cat-name-id" placeholder="Барсик" required>
             </li>
 
             <li class="form__item">
-              <label class="form__label" for="weight-id">Вес (кг)</label>
+              <label class="form__label form__field--required" for="weight-id">Вес (кг):</label>
               <input class="form__field" type="text" name="cat-name" id="weight-id" placeholder="7" required>
             </li>
 
             <li class="form__item">
-              <label class="form__label" for="age-id">Возраст (лет)</label>
+              <label class="form__label" for="age-id">Возраст (лет):</label>
               <input class="form__field" type="text" name="cat-name" id="age-id" placeholder="7">
             </li>
           </ul>
@@ -70,17 +70,20 @@
         <fieldset class="form__fieldset form__fieldset--border">
           <ul class="form__list">
             <li class="form__item">
-              <input class="form__item--radio" type="radio" name="choice" id="choice-slimming-id" value="choice-slimming" checked>
+              <input class="form__item--radio" type="radio" name="choice" id="choice-slimming-id"
+                value="choice-slimming" checked>
               <label class="form__label" for="choice-slimming-id">Похудение</label>
             </li>
 
             <li class="form__item">
-              <input class="form__item--radio" type="radio" name="choice" id="choice-weight-gain-id" value="choice-weight-gain">
+              <input class="form__item--radio" type="radio" name="choice" id="choice-weight-gain-id"
+                value="choice-weight-gain">
               <label class="form__label" for="choice-weight-gain-id">Набор массы</label>
             </li>
 
             <li class="form__item">
-              <input class="form__item--radio" type="radio" name="choice" id="choice-need-advice-id" value="choice-need-advice">
+              <input class="form__item--radio" type="radio" name="choice" id="choice-need-advice-id"
+                value="choice-need-advice">
               <label class="form__label" for="choice-need-advice-id">Не знаю (нужен ваш совет)</label>
             </li>
           </ul>
@@ -90,19 +93,22 @@
           <legend class="form__subtitle subtitle">Контактные данные (владельца кота)</legend>
           <ul class="form__list">
             <li class="form__item">
-              <label class="form__label" for="email-id">E-mail:</label>
-              <input class="form__field form__field--icon-email" type="email" name="email" id="email-id" placeholder="Kuklachev@gmail.com" required>
+              <label class="form__label form__field--required" for="email-id">E-mail:</label>
+              <input class="form__field form__field--icon-email" type="email" name="email" id="email-id"
+                placeholder="Kuklachev@gmail.com" required>
             </li>
             <li class="form__item">
-              <label class="form__label" for="phone-id">Телефон:</label>
-              <input class="form__field form__field--icon-phone" type="text" name="phone" id="phone-id" placeholder="8 (960) 900-60-90" required>
+              <label class="form__label form__field--required" for="phone-id">Телефон:</label>
+              <input class="form__field form__field--icon-phone" type="text" name="phone" id="phone-id"
+                placeholder="8 (960) 900-60-90" required>
             </li>
           </ul>
         </fieldset>
 
         <fieldset class="form__fieldset">
           <legend class="form__subtitle subtitle">Комментарий</legend>
-          <textarea class="form__field" name="comment" id="comment-id" rows="6">Расскажите обо всех повадках кота</textarea>
+          <textarea class="form__field" name="comment" id="comment-id"
+            rows="6">Расскажите обо всех повадках кота</textarea>
         </fieldset>
 
         <fieldset class="form__fieldset">
@@ -130,9 +136,9 @@
           </ul>
         </fieldset>
         <input class="button" type="submit" value="Отправить заявку">
-        <p class="form__note">* - Обязательные поля</p>
-
       </form>
+
+      <p class="form__note form__note--required">- Обязательные поля</p>
     </section>
 
     <section class="map">
