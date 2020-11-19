@@ -32,7 +32,7 @@
           </a>
         </li>
         <li class="main-nav__list-item">
-          <a href="form.html">
+          <a>
             Подбор программы
           </a>
         </li>
@@ -42,11 +42,11 @@
   </header>
 
   <main class="page-main">
-    <section class="form">
-      <h2 class="form__title">Подбор программы</h2>
-      <p class="form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <section class="form-container">
+      <h2 class="form-container__title">Подбор программы</h2>
+      <p class="form-container__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
 
-      <form action="https://echo.htmlacademy.ru/courses" method="post">
+      <form class="form" action="https://echo.htmlacademy.ru/courses" method="post">
 
         <fieldset class="form__fieldset">
           <ul class="form__list">
@@ -135,10 +135,10 @@
             </li>
           </ul>
         </fieldset>
-        <input class="button" type="submit" value="Отправить заявку">
+        <button class="button" type="submit">Отправить заявку</button>
+        <p class="form-container__note form-container__note--required">- Обязательные поля</p>
       </form>
 
-      <p class="form__note form__note--required">- Обязательные поля</p>
     </section>
 
     <section class="map">
