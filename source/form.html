@@ -51,18 +51,18 @@
         <fieldset class="form__fieldset">
           <ul class="form__list">
             <li class="form__item">
-              <label class="form__label form__field--required" for="cat-name-id">Имя:</label>
+              <label class="form__label form__label--required" for="cat-name-id">Имя:</label>
               <input class="form__field" type="text" name="cat-name" id="cat-name-id" placeholder="Барсик" required>
             </li>
 
             <li class="form__item">
-              <label class="form__label form__field--required" for="weight-id">Вес (кг):</label>
-              <input class="form__field" type="text" name="cat-name" id="weight-id" placeholder="7" required>
+              <label class="form__label form__label--required" for="cat-weight-id">Вес (кг):</label>
+              <input class="form__field" type="number" name="cat-weight" id="cat-weight-id" placeholder="7" required>
             </li>
 
             <li class="form__item">
-              <label class="form__label" for="age-id">Возраст (лет):</label>
-              <input class="form__field" type="text" name="cat-name" id="age-id" placeholder="7">
+              <label class="form__label" for="cat-age-id">Возраст (лет):</label>
+              <input class="form__field" type="number" name="cat-age" id="cat-age-id" placeholder="7">
             </li>
           </ul>
         </fieldset>
@@ -70,19 +70,19 @@
         <fieldset class="form__fieldset form__fieldset--border">
           <ul class="form__list">
             <li class="form__item">
-              <input class="form__item--radio" type="radio" name="choice" id="choice-slimming-id"
+              <input class="form__input-radio form__input-radio--radio-button" type="radio" name="choice" id="choice-slimming-id"
                 value="choice-slimming" checked>
               <label class="form__label" for="choice-slimming-id">Похудение</label>
             </li>
 
             <li class="form__item">
-              <input class="form__item--radio" type="radio" name="choice" id="choice-weight-gain-id"
+              <input class="form__input-radio form__input-radio--radio-button" type="radio" name="choice" id="choice-weight-gain-id"
                 value="choice-weight-gain">
               <label class="form__label" for="choice-weight-gain-id">Набор массы</label>
             </li>
 
             <li class="form__item">
-              <input class="form__item--radio" type="radio" name="choice" id="choice-need-advice-id"
+              <input class="form__input-radio form__input-radio--radio-button" type="radio" name="choice" id="choice-need-advice-id"
                 value="choice-need-advice">
               <label class="form__label" for="choice-need-advice-id">Не знаю (нужен ваш совет)</label>
             </li>
@@ -93,13 +93,13 @@
           <legend class="form__subtitle subtitle">Контактные данные (владельца кота)</legend>
           <ul class="form__list">
             <li class="form__item">
-              <label class="form__label form__field--required" for="email-id">E-mail:</label>
+              <label class="form__label form__label--required" for="email-id">E-mail:</label>
               <input class="form__field form__field--icon-email" type="email" name="email" id="email-id"
                 placeholder="Kuklachev@gmail.com" required>
             </li>
             <li class="form__item">
-              <label class="form__label form__field--required" for="phone-id">Телефон:</label>
-              <input class="form__field form__field--icon-phone" type="text" name="phone" id="phone-id"
+              <label class="form__label form__label--required" for="phone-id">Телефон:</label>
+              <input class="form__field form__field--icon-phone" type="tel" name="phone" id="phone-id" pattern="[8]{1} \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}"
                 placeholder="8 (960) 900-60-90" required>
             </li>
           </ul>
@@ -107,30 +107,30 @@
 
         <fieldset class="form__fieldset">
           <legend class="form__subtitle subtitle">Комментарий</legend>
-          <textarea class="form__field" name="comment" id="comment-id"
-            rows="6">Расскажите обо всех повадках кота</textarea>
+          <label class="visually-hidden" for="comment-id">Расскажите обо всех повадках кота.</label>
+          <textarea class="form__field" name="comment" id="comment-id" rows="6" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
         <fieldset class="form__fieldset">
           <legend class="form__subtitle subtitle">Дополнительно</legend>
           <ul class="form__list">
-            <li class="form__item form__item--checkbox">
-              <input type="checkbox" name="sweetener" id="sweetener-id" checked>
+            <li class="form__item">
+              <input class="form__input-checkbox form__input-checkbox--checkbox-field" type="checkbox" name="sweetener" id="sweetener-id" checked>
               <label class="form__label" for="sweetener-id">Сахарозаменитель</label>
             </li>
 
             <li class="form__item">
-              <input class="form__item--checkbox" type="checkbox" name="water" id="water-id">
+              <input class="form__input-checkbox form__input-checkbox--checkbox-field" type="checkbox" name="water" id="water-id">
               <label class="form__label" for="water-id">Питьевая вода</label>
             </li>
 
             <li class="form__item">
-              <input class="form__item--checkbox" type="checkbox" name="milk" id="milk-id">
+              <input class="form__input-checkbox form__input-checkbox--checkbox-field" type="checkbox" name="milk" id="milk-id">
               <label class="form__label" for="milk-id">Молоко</label>
             </li>
 
             <li class="form__item">
-              <input class="form__item--checkbox" type="checkbox" name="vitamins" id="vitamins-id">
+              <input class="form__input-checkbox form__input-checkbox--checkbox-field" type="checkbox" name="vitamins" id="vitamins-id">
               <label class="form__label" for="vitamins-id">Витамины</label>
             </li>
           </ul>
