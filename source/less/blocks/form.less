@@ -2,6 +2,8 @@
   outline: 1px solid rgba(93, 127, 219, 0.815);
   outline-offset: -1px;
   border: none;
+  padding: 0;
+  margin: 0;
 }
 
 .form__list {
@@ -37,6 +39,7 @@
 .form__subtitle {
   font-size: 24px;
   line-height: 26px;
+  padding-bottom: 34px;
 }
 
 .form__field {
@@ -50,11 +53,29 @@
   color: @basic_black;
 }
 
+.form__note::before {
+  content: "* ";
+}
+
 .form__input-radio {
   margin-bottom: 13px;
+  cursor: pointer;
 }
 
 .form__input-checkbox {
   margin-bottom: 12px;
+  cursor: pointer;
 }
 
+.form__wrapper-radio {
+  color: @special_dark-grey-2;
+}
+
+.form__wrapper-checkbox {
+  color: @basic_black;
+  padding-top: 22px;
+}
+
+.form__label--required::after {
+  content: "*";
+}
