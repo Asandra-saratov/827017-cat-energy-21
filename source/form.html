@@ -68,27 +68,27 @@
           </ul>
         </fieldset>
 
-          <fieldset class="form__fieldset form__fieldset--border">
-            <ul class="form__list form__wrapper-radio">
-              <li class="form__item">
-                <input class="form__input-radio form__input-radio--radio-button" type="radio" name="choice"
-                  id="choice-slimming-id" value="choice-slimming" checked>
-                <label class="form__label" for="choice-slimming-id">Похудение</label>
-              </li>
+        <fieldset class="form__fieldset form__fieldset--border">
+          <ul class="form__list form__list--radio">
+            <li class="form__item">
+              <input class="form__input-radio form__input-radio--radio-button" type="radio" name="choice"
+                id="choice-slimming-id" value="choice-slimming" checked>
+              <label class="form__label" for="choice-slimming-id">Похудение</label>
+            </li>
 
-              <li class="form__item">
-                <input class="form__input-radio form__input-radio--radio-button" type="radio" name="choice"
-                  id="choice-weight-gain-id" value="choice-weight-gain">
-                <label class="form__label" for="choice-weight-gain-id">Набор массы</label>
-              </li>
+            <li class="form__item">
+              <input class="form__input-radio form__input-radio--radio-button" type="radio" name="choice"
+                id="choice-weight-gain-id" value="choice-weight-gain">
+              <label class="form__label" for="choice-weight-gain-id">Набор массы</label>
+            </li>
 
-              <li class="form__item">
-                <input class="form__input-radio form__input-radio--radio-button" type="radio" name="choice"
-                  id="choice-need-advice-id" value="choice-need-advice">
-                <label class="form__label" for="choice-need-advice-id">Не знаю (нужен ваш совет)</label>
-              </li>
-            </ul>
-          </fieldset>
+            <li class="form__item">
+              <input class="form__input-radio form__input-radio--radio-button" type="radio" name="choice"
+                id="choice-need-advice-id" value="choice-need-advice">
+              <label class="form__label" for="choice-need-advice-id">Не знаю (нужен ваш совет)</label>
+            </li>
+          </ul>
+        </fieldset>
 
         <fieldset class="form__fieldset">
           <legend class="form__subtitle subtitle">Контактные данные (владельца кота)</legend>
@@ -109,40 +109,40 @@
         <fieldset class="form__fieldset">
           <legend class="form__subtitle subtitle">Комментарий</legend>
           <label class="visually-hidden" for="comment-id">Расскажите обо всех повадках кота.</label>
-          <textarea class="form__field-textarea" name="comment" id="comment-id" rows="6"
+          <textarea class="form__field form__field--textarea" name="comment" id="comment-id"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
-          <fieldset class=" form__fieldset">
-            <legend class="form__subtitle subtitle">Дополнительно</legend>
-            <ul class="form__list form__wrapper-checkbox">
-              <li class="form__item">
-                <input class="form__input-checkbox form__input-checkbox--checkbox-field" type="checkbox"
-                  name="sweetener" id="sweetener-id" checked>
-                <label class="form__label" for="sweetener-id">Сахарозаменитель</label>
-              </li>
+        <fieldset class=" form__fieldset">
+          <legend class="form__subtitle subtitle">Дополнительно</legend>
+          <ul class="form__list form__list--checkbox">
+            <li class="form__item">
+              <input class="form__input-checkbox form__input-checkbox--checkbox-field" type="checkbox" name="sweetener"
+                id="sweetener-id" checked>
+              <label class="form__label" for="sweetener-id">Сахарозаменитель</label>
+            </li>
 
-              <li class="form__item">
-                <input class="form__input-checkbox form__input-checkbox--checkbox-field" type="checkbox" name="water"
-                  id="water-id">
-                <label class="form__label" for="water-id">Питьевая вода</label>
-              </li>
+            <li class="form__item">
+              <input class="form__input-checkbox form__input-checkbox--checkbox-field" type="checkbox" name="water"
+                id="water-id">
+              <label class="form__label" for="water-id">Питьевая вода</label>
+            </li>
 
-              <li class="form__item">
-                <input class="form__input-checkbox form__input-checkbox--checkbox-field" type="checkbox" name="milk"
-                  id="milk-id">
-                <label class="form__label" for="milk-id">Молоко</label>
-              </li>
+            <li class="form__item">
+              <input class="form__input-checkbox form__input-checkbox--checkbox-field" type="checkbox" name="milk"
+                id="milk-id">
+              <label class="form__label" for="milk-id">Молоко</label>
+            </li>
 
-              <li class="form__item">
-                <input class="form__input-checkbox form__input-checkbox--checkbox-field" type="checkbox" name="vitamins"
-                  id="vitamins-id">
-                <label class="form__label" for="vitamins-id">Витамины</label>
-              </li>
-            </ul>
-          </fieldset>
+            <li class="form__item">
+              <input class="form__input-checkbox form__input-checkbox--checkbox-field" type="checkbox" name="vitamins"
+                id="vitamins-id">
+              <label class="form__label" for="vitamins-id">Витамины</label>
+            </li>
+          </ul>
+        </fieldset>
 
-        <button class="button" type="submit">Отправить заявку</button>
+        <button class="form__button-send button" type="submit">Отправить заявку</button>
         <p class="form__note">— Обязательные поля</p>
       </form>
 
