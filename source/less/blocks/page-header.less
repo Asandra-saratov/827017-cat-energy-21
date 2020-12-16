@@ -33,6 +33,19 @@
   min-height: 66px;
 
   @media (min-width: @tablet-width) {
-
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1220px;
+    margin: auto;
+  }
+}
+
+.page-header__logo-cat {
+  cursor: pointer;
 }
