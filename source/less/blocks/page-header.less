@@ -1,4 +1,6 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
   outline: 3px solid rgba(255, 0, 0, 0.8);
   outline-offset: -1px;
   display: flex;
@@ -25,4 +27,12 @@
 
 .page-header__logo-cat {
   cursor: pointer;
+}
+
+.page-header__logo-wrapper {
+  min-height: 66px;
+
+  @media (min-width: @tablet-width) {
+
+  }
 }
