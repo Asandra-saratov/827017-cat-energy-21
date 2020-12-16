@@ -13,10 +13,35 @@
   list-style: none;
   padding-left: 0;
   cursor: pointer;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .main-nav__list-item {
   a {
     color: @basic_black;
+  }
+}
+
+.main-nav__toggle {
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }

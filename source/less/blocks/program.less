@@ -1,6 +1,11 @@
 .program {
   outline: 3px solid rgba(255, 0, 0, 0.8);
   outline-offset: -1px;
+
+  @media (min-width: @desktop-width) {
+    max-width: 1220px;
+    margin: auto;
+  }
 }
 
 .program__title {
@@ -8,6 +13,26 @@
   line-height: 36px;
   padding-top: 30px;
   font-weight: inherit;
+  margin: 0;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: @basic_black;
+    max-width: 532px;
+    margin: auto;
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: @basic_black;
+    max-width: 1060px;
+    margin: auto;
+    text-align: left;
+  }
 }
 
 .program__slogan {
@@ -15,6 +40,25 @@
   padding-top: 25px;
   margin: 0;
   text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: @basic_black;
+    max-width: 532px;
+    margin: auto;
+    text-align: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: @basic_black;
+    max-width: 1060px;
+    margin: auto;
+    text-align: left;
+  }
 }
 
 .program__wrapper {
@@ -22,4 +66,8 @@
   background-repeat: no-repeat;
   color: @basic_white;
   min-height: 302px;
+
+  @media (min-width: @tablet-width) {
+    background-image: none;
+  }
 }
