@@ -9,12 +9,37 @@
   line-height: 37px;
   color: @basic_black;
   text-transform: uppercase;
-  padding-top: 30px;
   font-weight: inherit;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .link-to-catalog-list__text {
   font-family: @arial;
+  padding-left: 20px;
+  padding-right: 33px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 52px;
+    padding-right: 51px;
+    color: @basic_black;
+  }
 }
 
 .link-to-catalog-list__link {
@@ -23,4 +48,14 @@
   text-transform: uppercase;
   color: @basic_black;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

@@ -1,4 +1,16 @@
 .catalog-selection {
   outline: 3px solid rgba(255, 0, 0, 0.8);
   outline-offset: -1px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 20px;
+
+  @media (min-width: @tablet-width) {
+    row-gap: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
 }

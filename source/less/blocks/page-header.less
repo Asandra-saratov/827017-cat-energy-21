@@ -1,21 +1,23 @@
 .page-header {
-  display: flex;
-  flex-direction: column;
   outline: 3px solid rgba(255, 0, 0, 0.8);
   outline-offset: -1px;
-  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 280px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 0;
+    max-width: 708px;
+    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
     justify-content: space-between;
     max-width: 1220px;
-    margin: auto;
+    margin: 0 auto;
   }
 }
 

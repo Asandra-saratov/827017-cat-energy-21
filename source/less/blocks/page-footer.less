@@ -1,7 +1,19 @@
 .page-footer {
-  background-color: @basic_grey-add;
   outline: 3px solid rgba(255, 0, 0, 0.8);
   outline-offset: -1px;
+  background-color: @basic_grey-add;
+  max-width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    max-width: 708px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
 }
 
 .page-footer__logo {

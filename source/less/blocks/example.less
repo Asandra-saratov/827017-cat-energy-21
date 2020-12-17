@@ -10,10 +10,31 @@
   font-weight: inherit;
   color: @basic_black;
   padding-top: 27px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .example__text {
   font-family: @arial;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .example__number {
@@ -27,6 +48,7 @@
   text-transform: uppercase;
   color: @basic_black;
   line-height: 20px;
+  text-align: center;
 }
 
 .example__button {
@@ -51,4 +73,20 @@
   font-family: @arial;
   font-size: 12px;
   line-height: 12px;
+}
+
+.example__list {
+  display: flex;
+  justify-content: space-between;
+/*
+  @media (min-width: @tablet-width) {}
+
+  @media (min-width: @desktop-width) {}
+*/
+}
+
+.example__border {
+  width: 124px;
+  text-align: center;
+  border: 1px solid @special_grey;
 }
