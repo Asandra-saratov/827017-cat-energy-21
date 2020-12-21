@@ -2,6 +2,18 @@
   outline: 3px solid rgba(255, 0, 0, 0.8);
   outline-offset: -1px;
   background-color: @basic_grey-add;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 110px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .example__title {
@@ -15,11 +27,6 @@
     font-size: 60px;
     line-height: 60px;
   }
-
-  @media (min-width: @desktop-width) {
-    font-size: 60px;
-    line-height: 60px;
-  }
 }
 
 .example__text {
@@ -30,55 +37,23 @@
     line-height: 24px;
     padding-right: 20px;
   }
+}
 
-  @media (min-width: @desktop-width) {
-    font-size: 16px;
-    line-height: 24px;
+.example__text-wrapper {
+  @media (min-width: @desktop-width) {}
+}
+
+.example__list-wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
   }
-}
-
-.example__number {
-  text-transform: uppercase;
-  color: @basic_black;
-  font-size: 24px;
-  line-height: 24px;
-}
-
-.example__cost {
-  text-transform: uppercase;
-  color: @basic_black;
-  line-height: 20px;
-  text-align: center;
-}
-
-.example__button {
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 20px;
-  color: @basic_black;
-  text-transform: uppercase;
-  border: 0;
-  cursor: pointer;
-}
-
-.example__toggle {
-  width: 84px;
-  height: 14px;
-  background-color: @basic_white;
-  border: 1px solid @special_grey;
-  border-radius: 6px;
-}
-
-.example__description {
-  font-family: @arial;
-  font-size: 12px;
-  line-height: 12px;
 }
 
 .example__list {
   display: flex;
   justify-content: space-between;
-/*
+  /*
   @media (min-width: @tablet-width) {}
 
   @media (min-width: @desktop-width) {}
@@ -89,4 +64,151 @@
   width: 124px;
   text-align: center;
   border: 1px solid @special_grey;
+  border-radius: 3px;
+
+  @media (min-width: @tablet-width) {
+    width: 162px;
+    margin-right: 42px;
+  }
+}
+
+.example__number {
+  text-transform: uppercase;
+  color: @basic_black;
+  font-size: 24px;
+  line-height: 24px;
+  padding-top: 14px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.example__description {
+  font-family: @arial;
+  background-color: @basic_grey-add;
+  display: block;
+  position: relative;
+  font-size: 12px;
+  line-height: 12px;
+  right: 20px;
+  top: 13px;
+  width: 60px;
+  padding: 0 15px;
+  right: 25px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    top: 10px;
+    padding: 0 5px;
+
+    &--weight {
+      width: 100px;
+      right: 15px;
+    }
+
+    &--days {
+      width: 130px;
+      right: 30px;
+    }
+  }
+}
+
+.example__cost {
+  text-transform: uppercase;
+  color: @basic_black;
+  line-height: 20px;
+  text-align: center;
+  padding-top: 20px;
+
+  @media (min-width: @tablet-width) {
+    text-align: end;
+    max-width: 175px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.example__image {
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+  }
+}
+
+.example__result-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-top: 23px;
+
+  @media (min-width: @tablet-width) {
+    align-items: center;
+  }
+}
+
+.example__toggle {
+  width: 84px;
+  height: 14px;
+  background-color: @basic_white;
+  border: 1px solid @special_grey;
+  border-radius: 6px;
+
+  @media (min-width: @tablet-width) {
+    width: 428px;
+    height: 6px;
+    border-radius: 6px;
+    background-color: @special_grey;
+  }
+}
+
+.example__green-stripe {
+  width: 35px;
+  height: 6px;
+  background-color: @basic_green;
+  border-radius: 6px;
+  margin-top: 4px;
+  margin-left: 6px;
+  margin-bottom: 4px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    width: 8px;
+    height: 8px;
+    z-index: 2;
+    position: relative;
+    bottom: 2px;
+  }
+}
+
+.example__white-stripe {
+  @media (min-width: @tablet-width) {
+    width: 34px;
+    height: 34px;
+    border: 1px solid @special_grey;
+    background-color: @basic_white;
+    border-radius: 30px;
+    filter: drop-shadow(0px 1px 3px @special_grey);
+    position: relative;
+    bottom: 25px;
+    left: 196px;
+    z-index: 1;
+  }
+}
+
+.example__button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  color: @basic_black;
+  text-transform: uppercase;
+  border: 0;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
