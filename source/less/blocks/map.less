@@ -15,8 +15,8 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 21px;
+    width: 170px;
   }
-
 }
 
 .map__text {
@@ -26,14 +26,21 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    text-align: end;
+    width: 160px;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: start;
   }
 }
 
 .map__wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
 
-  @media (min-width: @tablet-width) {
-    grid-template-columns: 170px 160px;
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    height: 201px;
   }
 }

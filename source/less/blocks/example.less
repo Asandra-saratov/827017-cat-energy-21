@@ -4,6 +4,7 @@
   background-color: @basic_grey-add;
   padding: 0 20px;
   margin: 0 auto;
+  z-index: 1;
 
   @media (min-width: @tablet-width) {
     padding: 0 30px;
@@ -13,6 +14,19 @@
     padding: 0 110px;
     display: flex;
     justify-content: space-between;
+    background-color: inherit;
+/*
+    &::after {
+      content: "";
+      width: 1440px;
+      height: 462px;
+      background: @basic_grey-add;
+      position: absolute;
+      left: 230px;
+      top: 1300px;
+      z-index: -1;
+    }
+    */
   }
 }
 
@@ -37,10 +51,10 @@
     line-height: 24px;
     padding-right: 20px;
   }
-}
 
-.example__text-wrapper {
-  @media (min-width: @desktop-width) {}
+  @media (min-width: @desktop-width) {
+    max-width: 437px;
+  }
 }
 
 .example__list-wrapper {
@@ -48,16 +62,19 @@
     display: flex;
     justify-content: space-between;
   }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
+  }
 }
 
 .example__list {
   display: flex;
   justify-content: space-between;
-  /*
-  @media (min-width: @tablet-width) {}
 
-  @media (min-width: @desktop-width) {}
-*/
+  @media (min-width: @desktop-width) {
+    width: 366px;
+  }
 }
 
 .example__border {
@@ -92,7 +109,6 @@
   position: relative;
   font-size: 12px;
   line-height: 12px;
-  right: 20px;
   top: 13px;
   width: 60px;
   padding: 0 15px;
@@ -114,6 +130,10 @@
       right: 30px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    top: 7px;
+  }
 }
 
 .example__cost {
@@ -125,14 +145,19 @@
 
   @media (min-width: @tablet-width) {
     text-align: end;
-    max-width: 175px;
+    width: 175px;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 324px;
   }
 }
 
 .example__image {
-
   @media (min-width: @tablet-width) {
     text-align: center;
   }
@@ -148,6 +173,13 @@
     align-items: center;
   }
 }
+
+.example__result-progress {
+  @media (min-width: @desktop-width) {
+    align-self: flex-end;
+  }
+}
+
 
 .example__toggle {
   width: 84px;
@@ -190,7 +222,7 @@
     border: 1px solid @special_grey;
     background-color: @basic_white;
     border-radius: 30px;
-    filter: drop-shadow(0px 1px 3px @special_grey);
+    box-shadow: 0 1px 3px @special_grey;
     position: relative;
     bottom: 25px;
     left: 196px;
