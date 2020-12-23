@@ -4,9 +4,14 @@
   background-color: @basic_grey-add;
   margin: 0 auto;
   padding: 0 20px;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: @tablet-width) {
     padding: 0 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   @media (min-width: @desktop-width) {
@@ -15,6 +20,8 @@
 }
 
 .page-footer__logo {
+  align-self: center;
+
   img {
     padding-top: 39px;
   }

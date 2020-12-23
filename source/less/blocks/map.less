@@ -1,8 +1,17 @@
 .map {
   outline: 3px solid rgba(255, 0, 0, 0.8);
   outline-offset: -1px;
+}
+
+.map__wrapper {
   padding: 0 20px;
-  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    height: 201px;
+  }
 }
 
 .map__title {
@@ -11,6 +20,7 @@
   font-weight: inherit;
   color: @special_dark-grey-1;
   text-transform: uppercase;
+  width: 125px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -22,6 +32,7 @@
 .map__text {
   line-height: 20px;
   font-family: @arial;
+  width: 140px;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
@@ -35,12 +46,6 @@
   }
 }
 
-.map__wrapper {
-  display: flex;
-  justify-content: space-between;
-
-  @media (min-width: @desktop-width) {
-    width: 570px;
-    height: 201px;
-  }
+.map__image {
+  text-align: center;
 }

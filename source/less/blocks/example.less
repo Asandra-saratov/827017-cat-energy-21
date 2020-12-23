@@ -2,7 +2,6 @@
   outline: 3px solid rgba(255, 0, 0, 0.8);
   outline-offset: -1px;
   background-color: @basic_grey-add;
-  padding: 0 20px;
   margin: 0 auto;
   z-index: 1;
 
@@ -34,6 +33,8 @@
   font-weight: inherit;
   color: @basic_black;
   padding-top: 27px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
@@ -43,6 +44,7 @@
 
 .example__text {
   font-family: @arial;
+  padding: 0 20px;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
@@ -56,6 +58,8 @@
 }
 
 .example__list-wrapper {
+  padding: 0 20px;
+
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -67,8 +71,14 @@
 }
 
 .example__list {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
+  box-sizing: border-box;
+
+  dd {
+    margin: 0;
+  }
 
   @media (min-width: @desktop-width) {
     width: 366px;
@@ -76,10 +86,12 @@
 }
 
 .example__border {
-  width: 124px;
   text-align: center;
   border: 1px solid @special_grey;
   border-radius: 3px;
+  min-width: 124px;
+  box-sizing: border-box;
+
 
   @media (min-width: @tablet-width) {
     width: 162px;
@@ -103,14 +115,15 @@
 .example__description {
   font-family: @arial;
   background-color: @basic_grey-add;
-  display: block;
-  position: relative;
   font-size: 12px;
   line-height: 12px;
-  top: 13px;
+  display: block;
+  position: relative;
   width: 60px;
   padding: 0 15px;
-  right: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20px;
 
   @media (min-width: @tablet-width) {
     font-size: 14px;
@@ -156,9 +169,7 @@
 }
 
 .example__image {
-  @media (min-width: @tablet-width) {
-    text-align: center;
-  }
+  text-align: center;
 }
 
 .example__result-toggle {
