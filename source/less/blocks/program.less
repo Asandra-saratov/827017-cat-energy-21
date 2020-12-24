@@ -5,6 +5,7 @@
 
   @media (min-width: @tablet-width) {
     padding: 0 30px;
+    min-height: 810px;
   }
 
   @media (min-width: @desktop-width) {
@@ -39,7 +40,8 @@
     line-height: 60px;
     color: @basic_black;
     max-width: 532px;
-    margin: auto;
+    margin: 0 auto;
+    padding-top: 0;
     text-align: left;
   }
 
@@ -67,7 +69,8 @@
     line-height: 20px;
     color: @basic_black;
     max-width: 532px;
-    margin: auto;
+    padding-top: 41px;
+    margin: 0 auto;
     text-align: left;
   }
 
@@ -84,9 +87,29 @@
 .program__image {
   text-align: center;
   display: block;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+.program__link-wrapper {
+  @media (min-width: @tablet-width) {
+    max-width: 532px;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+    bottom: 67px;
+  }
 }
 
 .program__link {
   margin-left: 20px;
   margin-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 244px;
+    margin: 0;
+  }
 }
