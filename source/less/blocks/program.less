@@ -9,7 +9,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 190px;
+    padding-left: 190px;
+    padding-right: 0;
   }
 }
 
@@ -23,6 +24,20 @@
 
   @media (min-width: @tablet-width) {
     background-image: none;
+  }
+
+  &::before {
+    @media (min-width: @desktop-width) {
+      content: "";
+      background-image: url("../img/index-background-program-desktop.png"), url("../img/index-background-cat-desktop.jpg");
+      min-width: 720px;
+      min-height: 694px;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+    }
   }
 }
 
@@ -48,6 +63,7 @@
 
   @media (min-width: @desktop-width) {
     max-width: 1060px;
+    margin: 0;
   }
 }
 
@@ -72,6 +88,7 @@
 
   @media (min-width: @desktop-width) {
     max-width: 1060px;
+    margin: 0;
   }
 }
 
@@ -80,8 +97,16 @@
   display: block;
 
   @media (min-width: @tablet-width) {
+    margin: 0 auto;
     position: absolute;
+    top: 250px;
+    left: 0;
+    right: 0;
     z-index: -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    z-index: 1;
   }
 }
 
@@ -89,9 +114,12 @@
   @media (min-width: @tablet-width) {
     max-width: 532px;
     margin: 0 auto;
-    text-align: left;
     position: relative;
     bottom: 67px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
   }
 }
 

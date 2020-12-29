@@ -34,8 +34,14 @@
   flex-wrap: wrap;
 
   @media (min-width: @tablet-width) {
+    width: 630px;
+    margin: 0 auto;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
   }
 }
 
@@ -52,7 +58,6 @@
     line-height: 24px;
     min-height: 280px;
     width: 250px;
-    margin-right: 85px;
     margin-top: 37px;
   }
 

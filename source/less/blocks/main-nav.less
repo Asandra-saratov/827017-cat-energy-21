@@ -12,25 +12,33 @@
   text-transform: uppercase;
   list-style: none;
   padding-left: 0;
-  cursor: pointer;
   text-align: center;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
     line-height: 24px;
+    font-weight: normal;
     min-width: 440px;
     display: flex;
     justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
+    font-size: 20px;
     line-height: 30px;
+    min-width: 480px;
+    margin-top: 69px;
   }
 }
 
 .main-nav__list-item {
   a {
     color: @basic_black;
+
+    @media (min-width: @desktop-width) {
+      color: @basic_white;
+    }
   }
 }
 
