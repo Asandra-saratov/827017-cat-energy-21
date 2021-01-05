@@ -1,4 +1,5 @@
 .button {
+  display: block;
   background-color: @basic_green;
   text-decoration: none;
   font-family: inherit;
@@ -7,6 +8,12 @@
   color: @basic_white;
   cursor: pointer;
   border: none;
+  padding-top: 7px;
+  padding-bottom: 7px;
+
+  @media (min-width: @tablet-width) {
+    padding: 14px 0;
+  }
 
   &--show-all {
     background-color: @basic_grey;
