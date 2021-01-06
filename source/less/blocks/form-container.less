@@ -2,6 +2,16 @@
   outline: 3px solid rgba(255, 0, 0, 0.8);
   outline-offset: -1px;
   padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 70px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
 }
 
 .form-container__title {
@@ -11,6 +21,13 @@
   line-height: 36px;
   font-weight: inherit;
   color: @basic_black;
+  margin: 0;
+  padding-bottom: 37px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .form-container__text {
@@ -20,6 +37,11 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @basic_black;
-  padding-bottom: 25px;
-  padding-right: 52px;
+  padding-bottom: 39px;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
