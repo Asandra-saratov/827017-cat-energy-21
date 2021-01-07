@@ -8,8 +8,16 @@
     width: 100vw;
     height: 2px;
     background-color: @basic_green;
-    top: 60%;
+    top: 17px;
     z-index: -1;
-    box-sizing: border-box;
+
+    @media (min-width: @tablet-width) {
+      top: 21px;
+      margin-left: -70px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: -110px;
+    }
   }
 }

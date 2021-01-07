@@ -51,9 +51,9 @@
 
       <form class="form" action="https://echo.htmlacademy.ru/courses" method="post">
 
-        <div class="form_selection-wrapper">
+        <div class="form__selection-wrapper">
           <fieldset class="form__fieldset">
-            <ul class="form__list">
+            <ul class="form__list form__list--cat-data">
               <li class="form__item">
                 <label class="form__label form__label--required" for="cat-name-id">Имя:</label>
                 <input class="form__field" type="text" name="cat-name" id="cat-name-id" placeholder="Барсик" required>
@@ -113,9 +113,11 @@
 
         <fieldset class="form__fieldset">
           <legend class="form__subtitle subtitle">Комментарий</legend>
-          <label class="visually-hidden" for="comment-id">Расскажите обо всех повадках кота.</label>
-          <textarea class="form__field form__field--textarea" name="comment" id="comment-id"
-            placeholder="Расскажите обо всех повадках кота"></textarea>
+          <div class="form__textarea-wrapper">
+            <label class="visually-hidden" for="comment-id">Расскажите обо всех повадках кота.</label>
+            <textarea class="form__field form__field--textarea" name="comment" id="comment-id"
+              placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
         </fieldset>
 
         <fieldset class="form__fieldset">
