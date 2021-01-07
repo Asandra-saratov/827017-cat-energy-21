@@ -12,6 +12,7 @@
   border: none;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 .form__list {
@@ -185,14 +186,14 @@
   line-height: 26px;
   display: inline-block;
   position: relative;
-  background-color: inherit;
-  width: 100%;
+  background-color: @basic_white;
+  max-width: 200px;
   margin-bottom: 35px;
-  z-index: 1;
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    max-width: none;
   }
 }
 
@@ -215,11 +216,11 @@
 
   &--textarea {
     padding: 10px 12px 0 15px;
-    height: 140px;
+    min-height: 150px;
     margin-left: 0;
 
     @media (min-width: @tablet-width) {
-      height: 164px;
+      min-height: 174px;
     }
   }
 
@@ -266,11 +267,17 @@
   }
 }
 
-.form_button-wrapper {
-  margin-top: 21px;
+.form__button-wrapper {
+  padding-top: 21px;
+  padding-bottom: 32px;
 
   @media (min-width: @tablet-width) {
     display: flex;
-    margin-top: 34px;
+    padding-top: 34px;
+    padding-bottom: 72px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 95px;
   }
 }
