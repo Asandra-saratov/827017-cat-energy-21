@@ -7,8 +7,6 @@
 }
 
 .form__fieldset {
-  /*outline: 1px solid rgba(93, 127, 219, 0.815);
-  outline-offset: -1px;*/
   border: none;
   padding: 0;
   margin: 0;
@@ -146,7 +144,6 @@
   display: flex;
   align-items: center;
 
-
   &--checkbox {
     @media (min-width: @tablet-width) {
       width: 50%;
@@ -159,13 +156,13 @@
 }
 
 .form__input-radio {
-  &--radio-button:checked + .form__label--radio-button::after {
+  &:checked + .form__label::after {
     display: block;
   }
 }
 
 .form__input-checkbox {
-  &--checkbox-field:checked + .form__label--checkbox-field::before {
+  &:checked + .form__label::before {
     background-image: url("../img/check-mark.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -182,84 +179,6 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
-  }
-
-  &--radio-button {
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-left: 45px;
-
-    @media (min-width: @tablet-width) {
-      padding-left: 60px;
-    }
-  }
-
-  &--radio-button::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    border: 1px solid @special_grey;
-    border-radius: 50%;
-    top: 0;
-    left: 0;
-    cursor: pointer;
-    box-sizing: border-box;
-
-    @media (min-width: @tablet-width) {
-      width: 40px;
-      height: 40px;
-    }
-  }
-
-  &--radio-button::after {
-    content: "";
-    display: none;
-    position: absolute;
-    width: 13px;
-    height: 13px;
-    background: @basic_green;
-    border-radius: 50%;
-    top: 8px;
-    left: 8px;
-    cursor: pointer;
-    box-sizing: border-box;
-
-    @media (min-width: @tablet-width) {
-      width: 18px;
-      height: 18px;
-      top: 11px;
-      left: 11px;
-    }
-  }
-
-  &--checkbox-field {
-    padding-left: 45px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-
-    @media (min-width: @tablet-width) {
-      padding-left: 59px;
-    }
-  }
-
-  &--checkbox-field::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    border: 1px solid @special_grey;
-    top: 0;
-    left: 0;
-    cursor: pointer;
-    box-sizing: border-box;
-
-    @media (min-width: @tablet-width) {
-      width: 40px;
-      height: 40px;
-    }
   }
 
   &--required {

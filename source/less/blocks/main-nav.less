@@ -15,6 +15,14 @@
   text-align: center;
   cursor: pointer;
 
+  &--color {
+    li a {
+      @media (min-width: @desktop-width) {
+        color: @basic_white;
+      }
+    }
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 18px;
     line-height: 24px;
@@ -35,18 +43,6 @@
 .main-nav__list-item {
   a {
     color: @basic_black;
-
-    @media (min-width: @desktop-width) {
-      color: @basic_white;
-    }
-  }
-
-  &--color {
-    a {
-      @media (min-width: @desktop-width) {
-        color: @basic_black;
-      }
-    }
   }
 }
 
