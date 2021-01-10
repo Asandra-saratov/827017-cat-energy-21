@@ -1,6 +1,6 @@
 .additional-products__item {
-  outline: 1px solid rgba(93, 127, 219, 0.815);
-  outline-offset: -1px;
+  border-top: 1px solid @special_grey;
+  border-bottom: 1px solid @special_grey;
 }
 
 .additional-products__product-name {
@@ -15,7 +15,11 @@
 .additional-products__description {
   font-family: @arial;
   line-height: 14px;
-  margin-bottom: 15px;
+  width: 100%;
+
+  td:nth-child(2n) {
+    text-align: right;
+  }
 }
 
 .additional-products__link-to-order {
