@@ -1,3 +1,23 @@
 .subtitle {
   color: @basic_black;
+  box-sizing: border-box;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 2px;
+    background-color: @basic_green;
+    top: 17px;
+    z-index: -1;
+
+    @media (min-width: @tablet-width) {
+      top: 21px;
+      margin-left: -70px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: -110px;
+    }
+  }
 }

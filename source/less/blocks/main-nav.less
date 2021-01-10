@@ -35,9 +35,13 @@
 .main-nav__list-item {
   a {
     color: @basic_black;
+  }
 
-    @media (min-width: @desktop-width) {
-      color: @basic_white;
+  &--color {
+    a {
+      @media (min-width: @desktop-width) {
+        color: @basic_white;
+      }
     }
   }
 }
