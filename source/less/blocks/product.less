@@ -1,25 +1,57 @@
 .product__item {
   border-top: 1px solid @special_grey-2;
   border-bottom: 1px solid @special_grey-2;
-  padding: 0 20px;
+  padding: 19px 20px 22px 20px;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    border: none;
+    padding: 0 36px;
+    background-color: @basic_grey;
+    margin-bottom: 60px;
+  }
+
+  &--border {
+    @media (min-width: @tablet-width) {
+      background-color: @basic_white;
+      border: 2px solid @basic_grey;
+    }
+  }
 }
 
 .product__wrapper {
   display: grid;
   grid-template-columns: 50% 50%;
-  padding-top: 19px;
   padding-bottom: 22px;
 
   a {
     text-align: center;
   }
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
 }
 
 .product__image {
   padding-top: 14px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    padding: 0;
+    left: 0;
+    right: 0;
+    top: -5%;
+  }
 }
 
-/*.product__description-wrapper {}*/
+.product__description-wrapper {
+  @media (min-width: @tablet-width) {
+    padding-top: 161px;
+    padding-bottom: 33px;
+  }
+}
 
 .product__name {
   font-weight: normal;
@@ -27,9 +59,17 @@
   line-height: 20px;
   color: @special_dark-grey-2;
   text-transform: uppercase;
-  margin: 0;
-  width: 75px;
   text-align: left;
+  width: 75px;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    width: 130px;
+    margin: 0 auto;
+  }
 }
 
 .product__description {
@@ -38,13 +78,32 @@
   font-family: @arial;
   width: 100%;
 
-  td:nth-child(2n) {
-    text-align: right;
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+  }
+
+  td {
+    &:nth-child(2n) {
+      text-align: right;
+    }
+
+    @media (min-width: @tablet-width) {
+      border-bottom: 1px solid @special_grey;
+      padding-top: 7px;
+      padding-bottom: 9px;
+    }
   }
 }
-
 
 .product__link-to-order {
   font-size: 16px;
   line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 40px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
 }

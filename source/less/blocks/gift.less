@@ -1,13 +1,25 @@
 .gift {
-  outline: 3px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -1px;
   background-image: url("../img/gift-photo-mobile.png");
   background-repeat: no-repeat;
   background-color: @basic_green;
-  min-height: 289px;
+  height: 289px;
   margin: 0 20px;
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
+  position: relative;
+  margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/gift-photo-tablet.png");
+    height: 200px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 76px;
+  }
+}
+
+.gift__icon {
+  position: absolute;
 }
 
 .gift__text {
@@ -16,5 +28,12 @@
   line-height: 20px;
   color: @basic_white;
   text-align: center;
-  margin: 0 auto;
+  margin: 0;
+  padding-top: 186px;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+    padding-top: 71px;
+    padding-left: 60%;
+  }
 }
