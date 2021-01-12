@@ -156,16 +156,20 @@
 }
 
 .form__input-radio {
-  &:checked + .form__label::after {
-    display: block;
+  &:checked + .form__label {
+    &::after {
+      display: block;
+    }
   }
 }
 
 .form__input-checkbox {
-  &:checked + .form__label::before {
-    background-image: url("../img/check-mark.png");
-    background-repeat: no-repeat;
-    background-position: center;
+  &:checked + .form__label {
+    &::before {
+      background-image: url("../img/check-mark.png");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 }
 
