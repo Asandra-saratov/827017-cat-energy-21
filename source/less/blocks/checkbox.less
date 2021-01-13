@@ -1,4 +1,16 @@
 .checkbox {
+  &:checked {
+    + .checkbox__label {
+      &::before {
+        background-image: url("../img/check-mark.png");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+}
+
+.checkbox__label {
   padding-left: 45px;
   padding-top: 6px;
   padding-bottom: 6px;
