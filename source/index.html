@@ -16,31 +16,34 @@
         <img src="../img/svg/logo-cat-mobile.svg" alt="Кот на логотипе «Cat Energy».">
       </a>
       <img class="page-header__logo" src="../img/svg/logo-cat-energy.svg" alt="Логотип «Cat Energy».">
-    </div>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
+
+      <button class="toggle toggle--closed toggle--nojs" type="button">
         <span class="visually-hidden">
           Открыть меню.
         </span>
       </button>
+    </div>
 
-      <ul class="main-nav__list">
-        <li class="main-nav__list-item main-nav__list-item--color">
-          <a>
-            Главная
-          </a>
-        </li>
-        <li class="main-nav__list-item main-nav__list-item--color">
-          <a href="catalog.html">
-            Каталог продукции
-          </a>
-        </li>
-        <li class="main-nav__list-item main-nav__list-item--color">
-          <a href="form.html">
-            Подбор программы
-          </a>
-        </li>
-      </ul>
+    <nav class="main-nav main-nav--nojs">
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item main-nav__list-item--color">
+            <a>
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__list-item main-nav__list-item--color">
+            <a href="catalog.html">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="main-nav__list-item main-nav__list-item--color">
+            <a href="form.html">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
 
@@ -205,6 +208,25 @@
     </div>
 
   </footer>
+
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+    navToggle.classList.remove('toggle--nojs');
+
+    navToggle.addEventListener('click', function() {
+      if (navToggle.classList.contains('toggle--closed')) {
+        navToggle.classList.remove('toggle--closed');
+        navMain.classList.add('main-nav--opened');
+      }
+      else {
+        navToggle.classList.add('toggle--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
 
 </body>
 
