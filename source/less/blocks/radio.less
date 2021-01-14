@@ -1,4 +1,14 @@
 .radio {
+  &:checked {
+    + .radio__label {
+      &::after {
+        display: block;
+      }
+    }
+  }
+}
+
+.radio__label {
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 45px;

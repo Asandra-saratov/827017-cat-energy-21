@@ -155,20 +155,6 @@
   }
 }
 
-.form__input-radio {
-  &:checked + .form__label::after {
-    display: block;
-  }
-}
-
-.form__input-checkbox {
-  &:checked + .form__label::before {
-    background-image: url("../img/check-mark.png");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-}
-
 .form__label {
   font-size: 16px;
   line-height: 18px;
@@ -292,6 +278,8 @@
   font-size: 16px;
   line-height: 20px;
   width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
