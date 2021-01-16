@@ -1,7 +1,6 @@
 .program {
-  outline: 3px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -1px;
   margin: 0 auto;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     padding: 0 30px;
@@ -21,6 +20,7 @@
   color: @basic_white;
   min-height: 302px;
   background-size: cover;
+  margin-bottom: 138px;
 
   @media (min-width: @tablet-width) {
     background-image: none;
@@ -43,11 +43,9 @@
 }
 
 .program__title {
-  outline: 1px solid rgba(93, 127, 219, 0.815);
-  outline-offset: -1px;
   font-size: 36px;
   line-height: 36px;
-  padding-top: 30px;
+  padding-top: 29px;
   font-weight: inherit;
   margin: 0;
   text-align: center;
@@ -69,8 +67,6 @@
 }
 
 .program__slogan {
-  outline: 1px solid rgba(93, 127, 219, 0.815);
-  outline-offset: -1px;
   line-height: 14px;
   padding-top: 25px;
   margin: 0;
@@ -96,10 +92,13 @@
 .program__image {
   text-align: center;
   display: block;
+  position: absolute;
+  top: 35%;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     margin: 0 auto;
-    position: absolute;
+
     top: 250px;
     left: 0;
     right: 0;
@@ -127,7 +126,7 @@
 .program__link {
   margin-left: 20px;
   margin-right: 20px;
-  padding-top: 11px;
+  padding-top: 12px;
   padding-bottom: 11px;
 
   @media (min-width: @tablet-width) {

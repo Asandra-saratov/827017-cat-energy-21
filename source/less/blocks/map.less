@@ -1,6 +1,4 @@
 .map {
-  outline: 3px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -1px;
   background-color: @basic_grey;
 
   &--color {
@@ -10,10 +8,11 @@
 
 .map__wrapper {
   padding: 0 20px;
-  min-height: 114px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 27px;
+  padding-bottom: 28px;
 
   @media (min-width: @tablet-width) {
     padding: 0 30px;
@@ -39,6 +38,7 @@
   color: @special_dark-grey-1;
   text-transform: uppercase;
   width: 125px;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -56,6 +56,7 @@
   line-height: 20px;
   font-family: @arial;
   width: 140px;
+  margin: 0;
 
   br {
     display: none;
@@ -87,6 +88,7 @@
 
 .map__image {
   text-align: center;
+  line-height: 0;
 
   img {
     width: 100%;

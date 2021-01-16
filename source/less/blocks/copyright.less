@@ -1,6 +1,13 @@
 .copyright__link {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  svg {
+    width: 45px;
+    height: 40px;
+    margin-right: -10px;
+  }
 }
 
 .copyright__title {
@@ -9,6 +16,7 @@
   line-height: 18px;
   font-weight: inherit;
   color: @special_dark-grey;
+  margin: 0;
   cursor: pointer;
 
   @media (min-width: @tablet-width) {

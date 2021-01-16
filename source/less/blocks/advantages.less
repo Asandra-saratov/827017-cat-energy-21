@@ -1,7 +1,8 @@
 .advantages {
-  outline: 3px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -1px;
-  padding: 0 20px;
+  padding-top: 0;
+  padding-right: 20px;
+  padding-bottom: 42px;
+  padding-left: 20px;
 
   @media (min-width: @tablet-width) {
     padding: 0 30px;
@@ -28,10 +29,13 @@
 .advantages__list {
   list-style: none;
   font-family: @arial;
+  padding-top: 18px;
   padding-left: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     width: 630px;
@@ -46,10 +50,10 @@
 }
 
 .advantages__item {
-  outline: 1px solid rgba(93, 127, 219, 0.815);
-  outline-offset: -1px;
   min-height: 60px;
+  padding-left: 20px;
   margin-top: 20px;
+  margin-left: 60px;
   display: flex;
   align-items: center;
 
@@ -58,10 +62,57 @@
     line-height: 24px;
     min-height: 280px;
     width: 250px;
-    margin-top: 37px;
+    margin: 0;
+    padding: 0;
   }
 
   @media (min-width: @desktop-width) {
     margin-right: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+  }
+
+  &--useful {
+    &::before {
+      background: url("../img/svg/advantages-item-useful.svg");
+      left: 0;
+
+      @media (min-width: @tablet-width) {
+        top: 31px;
+      }
+    }
+  }
+
+  &--powder {
+    &::before {
+      background: url("../img/svg/advantages-item-powder.svg");
+      left: 0;
+
+      @media (min-width: @tablet-width) {
+        top: 31px;
+        left: 380px;
+      }
+    }
+  }
+
+  &--replacement {
+    &::before {
+      background: url("../img/svg/advantages-item-replacement.svg");
+      left: 0;
+
+      @media (min-width: @tablet-width) {}
+    }
+  }
+
+  &--month {
+    &::before {
+      background: url("../img/svg/advantages-item-month.svg");
+      left: 0;
+    }
   }
 }
