@@ -1,6 +1,6 @@
 .main-nav {
   box-sizing: border-box;
-  
+
   @media (max-width: @mobile-width-only) {
     display: none;
 
@@ -63,6 +63,19 @@
     color: @basic_black;
   }
 
+  &:hover,
+  &:focus {
+    @media (min-width: @tablet-width) {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    @media (min-width: @tablet-width) {
+      opacity: 0.3;
+    }
+  }
+
   &--color {
     a {
       @media (min-width: @desktop-width) {
@@ -72,7 +85,6 @@
   }
 
   &--active {
-
     @media (min-width: @tablet-width) {
       border-bottom: 2px solid @basic_green;
       padding-bottom: 8px;

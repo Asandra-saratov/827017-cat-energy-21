@@ -13,7 +13,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 110px;
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-top: 71px;
+    border-bottom: none;
   }
 }
 
@@ -40,7 +43,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  position: relative;
+
 
   @media (min-width: @tablet-width) {
     width: 630px;
@@ -69,6 +72,7 @@
   margin-left: 60px;
   display: flex;
   align-items: center;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
@@ -78,11 +82,10 @@
     padding-left: 0;
     padding-top: 132px;
     padding-bottom: 78px;
-
   }
 
   @media (min-width: @desktop-width) {
-    margin-right: 0;
+    padding-top: 135px;
   }
 
   &::before {
@@ -100,36 +103,26 @@
     }
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    background-repeat: no-repeat;
-    background-position: right;
-    width: 246px;
-    height: 100%;
-
-    z-index: -1;
-  }
-
   &--useful {
     @media (min-width: @tablet-width) {
       margin-bottom: 35px;
+      background-image: url("../img/one.png");
+      background-repeat: no-repeat;
+      background-position: 127px 20px;
+      z-index: -1;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 0;
     }
 
     &::before {
       background-image: url("../img/svg/advantages-item-useful.svg");
-      left: 0;
+      left: -60px;
 
       @media (min-width: @tablet-width) {
-        top: 39px;
-      }
-    }
-
-    &::after {
-      @media (min-width: @tablet-width) {
-        background-image: url("../img/one.png");
-        top: -173px;
-        right: 433px;
+        left: 0;
+        top: 21px;
       }
     }
   }
@@ -137,23 +130,23 @@
   &--powder {
     @media (min-width: @tablet-width) {
       margin-bottom: 35px;
+      background-image: url("../img/two.png");
+      background-repeat: no-repeat;
+      background-position: 122px 20px;
+      z-index: -1;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 0;
     }
 
     &::before {
       background-image: url("../img/svg/advantages-item-powder.svg");
-      left: 0;
+      left: -60px;
 
       @media (min-width: @tablet-width) {
-        top: 39px;
-        left: 384px;
-      }
-    }
-
-    &::after {
-      @media (min-width: @tablet-width) {
-        background-image: url("../img/two.png");
-        top: -173px;
-        right: 11px;
+        top: 21px;
+        left: 0;
       }
     }
   }
@@ -161,22 +154,23 @@
   &--replacement {
     @media (min-width: @tablet-width) {
       margin-bottom: 25px;
+      background-image: url("../img/three.png");
+      background-repeat: no-repeat;
+      background-position: 125px 20px;
+      z-index: -1;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 0;
     }
 
     &::before {
       background-image: url("../img/svg/advantages-item-replacement.svg");
-      left: 0;
+      left: -60px;
 
       @media (min-width: @tablet-width) {
-        top: 355px;
-      }
-    }
-
-    &::after {
-      @media (min-width: @tablet-width) {
-        background-image: url("../img/three.png");
-        top: 145px;
-        right: 394px;
+        top: 21px;
+        left: 0;
       }
     }
   }
@@ -184,23 +178,23 @@
   &--month {
     @media (min-width: @tablet-width) {
       margin-bottom: 25px;
+      background-image: url("../img/four.png");
+      background-repeat: no-repeat;
+      background-position: 125px 20px;
+      z-index: -1;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 0;
     }
 
     &::before {
       background-image: url("../img/svg/advantages-item-month.svg");
-      left: 0;
+      left: -60px;
 
       @media (min-width: @tablet-width) {
-        top: 355px;
-        left: 383px;
-      }
-    }
-
-    &::after {
-      @media (min-width: @tablet-width) {
-        background-image: url("../img/four.png");
-        top: 145px;
-        right: 2px;
+        top: 21px;
+        left: 0;
       }
     }
   }

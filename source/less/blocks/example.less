@@ -26,6 +26,10 @@
   @media (min-width: @tablet-width) {
     padding-bottom: 255px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 70px;
+  }
 }
 
 .example__title {
@@ -35,7 +39,7 @@
   color: @basic_black;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 33px;
+  padding-bottom: 34px;
   margin: 0;
 
   @media (min-width: @tablet-width) {
@@ -48,8 +52,10 @@
   }
 
   @media (min-width: @desktop-width) {
+    padding-top: 45px;
     padding-left: 110px;
     padding-right: 0;
+    padding-bottom: 76px;
   }
 }
 
@@ -73,6 +79,8 @@
     max-width: 437px;
     padding-left: 0;
     padding-right: 0;
+    padding-top: 72px;
+    padding-bottom: 68px;
   }
 }
 
@@ -162,8 +170,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    top: 7px;
     background-color: @basic_grey-add;
+    top: 11px;
   }
 
   &--weight {
@@ -204,7 +212,8 @@
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
-    width: 324px;
+    width: 326px;
+    padding-top: 55px;
   }
 }
 
@@ -215,13 +224,11 @@
 
   @media (min-width: @desktop-width) {
     align-self: flex-end;
-    padding-right: 110px;
+    padding-right: 86px;
   }
 }
 
 .example__image-wrapper {
-  text-align: center;
-  
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: center;
@@ -231,9 +238,17 @@
     right: 0;
     left: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    bottom: -6px;
+    left: -74px;
+  }
 }
 
 .example__image-before {
+  text-align: center;
+
   @media (min-width: @tablet-width) {
     position: relative;
     bottom: 8px;
@@ -245,6 +260,12 @@
 
   @media (min-width: @tablet-width) {
     display: inline;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: -42px;
+    position: relative;
+    bottom: 6px;
   }
 }
 
@@ -262,6 +283,11 @@
     background-color: @basic_grey-add;
     padding-top: 362px;
     padding-bottom: 67px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 0;
+    padding-bottom: 69px;
   }
 }
 
@@ -302,16 +328,25 @@
 
 .example__white-stripe {
   @media (min-width: @tablet-width) {
-    width: 34px;
-    height: 34px;
+    width: 32px;
+    height: 32px;
     border: 1px solid @special_grey;
     background-color: @basic_white;
     border-radius: 30px;
     box-shadow: 0 1px 3px @special_grey;
     position: relative;
     bottom: 22px;
-    left: 195px;
+    left: 197px;
     z-index: 1;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 2px 4px rgba(@basic_black, 0.19);
+  }
+
+  &:active {
+    border: 1px solid @basic_green;
   }
 }
 
@@ -320,6 +355,7 @@
   font-size: 16px;
   line-height: 20px;
   color: @basic_black;
+  background-color: inherit;
   padding: 0;
   text-transform: uppercase;
   border: 0;
