@@ -1,26 +1,34 @@
 .program {
-  outline: 3px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -1px;
   margin: 0 auto;
+  position: relative;
 
   @media (min-width: @tablet-width) {
-    padding: 0 30px;
-    min-height: 810px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 316px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 190px;
-    padding-right: 0;
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-top: 96px;
+    padding-bottom: 60px;
+    position: inherit;
   }
 }
 
 .program__wrapper {
-  background-image: url("../img/index-background-program.png"), url("../img/index-background-cat-mobile.jpg");
+  background-image: url("../img/green-bg/index-background-program.png"), url("../img/cats/index-background-cat-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   color: @basic_white;
   min-height: 302px;
   background-size: cover;
+  margin-bottom: 138px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/green-bg/index-background-program@2x.png"), url("../img/cats/index-background-cat-mobile@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     background-image: none;
@@ -29,7 +37,7 @@
   &::before {
     @media (min-width: @desktop-width) {
       content: "";
-      background-image: url("../img/index-background-program-desktop.png"), url("../img/index-background-cat-desktop.jpg");
+      background-image: url("../img/green-bg/index-background-program-desktop.png"), url("../img/cats/index-background-cat-desktop.jpg");
       background-size: cover;
       width: 50%;
       min-height: 694px;
@@ -38,16 +46,18 @@
       top: 0;
       right: 0;
       z-index: -1;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/green-bg/index-background-program-desktop@2x.png"), url("../img/cats/index-background-cat-desktop@2x.jpg");
+      }
     }
   }
 }
 
 .program__title {
-  outline: 1px solid rgba(93, 127, 219, 0.815);
-  outline-offset: -1px;
   font-size: 36px;
   line-height: 36px;
-  padding-top: 30px;
+  padding-top: 29px;
   font-weight: inherit;
   margin: 0;
   text-align: center;
@@ -63,14 +73,12 @@
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 1060px;
+    padding-left: 80px;
     margin: 0;
   }
 }
 
 .program__slogan {
-  outline: 1px solid rgba(93, 127, 219, 0.815);
-  outline-offset: -1px;
   line-height: 14px;
   padding-top: 25px;
   margin: 0;
@@ -88,7 +96,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 1060px;
+    padding-left: 80px;
     margin: 0;
   }
 }
@@ -96,18 +104,20 @@
 .program__image {
   text-align: center;
   display: block;
+  position: absolute;
+  top: 170px;
+  right: 0;
+  left: 0;
 
   @media (min-width: @tablet-width) {
-    margin: 0 auto;
-    position: absolute;
-    top: 250px;
-    left: 0;
+    top: 200px;
     right: 0;
     z-index: -1;
   }
 
   @media (min-width: @desktop-width) {
-    z-index: 1;
+    top: 141px;
+    left: 230px;
   }
 }
 
@@ -116,18 +126,22 @@
     max-width: 532px;
     margin: 0 auto;
     position: relative;
-    bottom: 67px;
+    bottom: 210px;
+    left: -5px;
   }
 
   @media (min-width: @desktop-width) {
+    padding-left: 80px;
+    bottom: 208px;
     margin: 0;
+    left: 0;
   }
 }
 
 .program__link {
   margin-left: 20px;
   margin-right: 20px;
-  padding-top: 11px;
+  padding-top: 12px;
   padding-bottom: 11px;
 
   @media (min-width: @tablet-width) {

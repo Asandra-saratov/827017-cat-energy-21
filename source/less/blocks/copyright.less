@@ -1,6 +1,32 @@
 .copyright__link {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    path {
+      fill: @basic_green;
+    }
+  }
+
+  &:active {
+    opacity: 0.33;
+  }
+
+  svg {
+    width: 45px;
+    height: 40px;
+    margin-right: -10px;
+
+    @media (min-width: @tablet-width) {
+      margin-right: -6px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-right: -10px;
+    }
+  }
 }
 
 .copyright__title {
@@ -9,9 +35,14 @@
   line-height: 18px;
   font-weight: inherit;
   color: @special_dark-grey;
+  margin: 0;
   cursor: pointer;
 
   @media (min-width: @tablet-width) {
-    padding-right: 22px;
+    padding-right: 12px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 15px;
   }
 }

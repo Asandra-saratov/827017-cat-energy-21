@@ -1,14 +1,22 @@
 .advantages {
-  outline: 3px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -1px;
-  padding: 0 20px;
+  padding-top: 0;
+  padding-right: 20px;
+  padding-bottom: 42px;
+  padding-left: 20px;
 
   @media (min-width: @tablet-width) {
-    padding: 0 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 45px;
+    padding-bottom: 0;
+    border-bottom: 1px solid @special_almost-white;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 110px;
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-top: 71px;
+    border-bottom: none;
   }
 }
 
@@ -22,20 +30,23 @@
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    padding-bottom: 34px;
   }
 }
 
 .advantages__list {
   list-style: none;
   font-family: @arial;
+  padding-top: 18px;
   padding-left: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 
+
   @media (min-width: @tablet-width) {
-    width: 630px;
-    margin: 0 auto;
+    margin: 0;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -45,23 +56,151 @@
   }
 }
 
+.advantages__br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline;
+  }
+}
+
 .advantages__item {
-  outline: 1px solid rgba(93, 127, 219, 0.815);
-  outline-offset: -1px;
   min-height: 60px;
+  padding-left: 20px;
   margin-top: 20px;
+  margin-left: 60px;
   display: flex;
   align-items: center;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    min-height: 280px;
-    width: 250px;
-    margin-top: 37px;
+    width: 46%;
+    margin: 0;
+    padding-left: 0;
+    padding-top: 132px;
+    padding-bottom: 78px;
+    padding-right: 62px;
+    box-sizing: border-box;
   }
 
   @media (min-width: @desktop-width) {
-    margin-right: 0;
+    padding-top: 135px;
+    padding-right: 0;
+    width: 252px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: @basic_green;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+
+    @media (min-width: @tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &--useful {
+    @media (min-width: @tablet-width) {
+      margin-bottom: 35px;
+      background-image: url("../img/one.png");
+      background-repeat: no-repeat;
+      background-position: 127px 20px;
+      z-index: -1;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      background-image: url("../img/svg/advantages-item-useful.svg");
+      left: -60px;
+
+      @media (min-width: @tablet-width) {
+        left: 0;
+        top: 21px;
+      }
+    }
+  }
+
+  &--powder {
+    @media (min-width: @tablet-width) {
+      margin-bottom: 35px;
+      background-image: url("../img/two.png");
+      background-repeat: no-repeat;
+      background-position: 122px 20px;
+      z-index: -1;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      background-image: url("../img/svg/advantages-item-powder.svg");
+      left: -60px;
+
+      @media (min-width: @tablet-width) {
+        top: 21px;
+        left: 0;
+      }
+    }
+  }
+
+  &--replacement {
+    @media (min-width: @tablet-width) {
+      margin-bottom: 25px;
+      background-image: url("../img/three.png");
+      background-repeat: no-repeat;
+      background-position: 125px 20px;
+      z-index: -1;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      background-image: url("../img/svg/advantages-item-replacement.svg");
+      left: -60px;
+
+      @media (min-width: @tablet-width) {
+        top: 21px;
+        left: 0;
+      }
+    }
+  }
+
+  &--month {
+    @media (min-width: @tablet-width) {
+      margin-bottom: 25px;
+      background-image: url("../img/four.png");
+      background-repeat: no-repeat;
+      background-position: 125px 20px;
+      z-index: -1;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 0;
+      margin-left: -5px;
+      margin-right: -5px;
+    }
+
+    &::before {
+      background-image: url("../img/svg/advantages-item-month.svg");
+      left: -60px;
+
+      @media (min-width: @tablet-width) {
+        top: 21px;
+        left: 0;
+      }
+    }
   }
 }

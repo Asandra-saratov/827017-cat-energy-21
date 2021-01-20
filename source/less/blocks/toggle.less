@@ -1,0 +1,65 @@
+.toggle {
+  display: block;
+  width: 24px;
+  height: 18px;
+  padding: 0;
+  margin-left: 10px;
+  position: relative;
+  border: none;
+  background-color: inherit;
+  z-index: 2;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 24px;
+    height: 1.5px;
+    background-color: @basic_black;
+    box-shadow: none;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &--closed {
+    width: 24px;
+    height: 16px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 24px;
+      height: 1.5px;
+      background-color: @basic_black;
+      box-shadow: 0 8px 0 0 @basic_black, 0 16px 0 0 @basic_black;
+      transform: none;
+    }
+
+    &::after {
+      transform: none;
+    }
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  &--nojs {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
