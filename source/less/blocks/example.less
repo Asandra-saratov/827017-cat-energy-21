@@ -71,12 +71,12 @@
     font-size: 16px;
     line-height: 24px;
     padding-left: 30px;
-    padding-right: 60px;
+    padding-right: 50px;
     padding-bottom: 52px;
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 437px;
+    max-width: 439px;
     padding-left: 0;
     padding-right: 0;
     padding-top: 72px;
@@ -180,6 +180,8 @@
     @media (min-width: @tablet-width) {
       width: 100px;
       right: 15px;
+      padding-left: 8px;
+      padding-right: 8px;
     }
   }
 
@@ -187,6 +189,8 @@
     @media (min-width: @tablet-width) {
       width: 130px;
       right: 30px;
+      padding-right: 6px;
+      padding-left: 6px;
     }
   }
 }
@@ -249,6 +253,11 @@
 .example__image-before {
   text-align: center;
 
+  img {
+    min-height: 232px;
+  }
+
+
   @media (min-width: @tablet-width) {
     position: relative;
     bottom: 8px;
@@ -282,7 +291,7 @@
     align-items: center;
     background-color: @basic_grey-add;
     padding-top: 362px;
-    padding-bottom: 67px;
+    padding-bottom: 68px;
   }
 
   @media (min-width: @desktop-width) {
@@ -338,16 +347,23 @@
     bottom: 22px;
     left: 197px;
     z-index: 1;
+    cursor: pointer;
   }
 
   &:hover,
   &:focus {
     box-shadow: 0 2px 4px rgba(@basic_black, 0.19);
+    cursor: pointer;
   }
 
   &:active {
     border: 1px solid @basic_green;
   }
+}
+
+.example__button-wrapper {
+  position: relative;
+  z-index: 2;
 }
 
 .example__button {
@@ -358,7 +374,7 @@
   background-color: inherit;
   padding: 0;
   text-transform: uppercase;
-  border: 0;
+  border: none;
   cursor: pointer;
 
   @media (min-width: @tablet-width) {
@@ -367,5 +383,12 @@
     margin-right: 25px;
     margin-left: 20px;
     border-bottom: 1px dotted @special_grey;
+    cursor: pointer;
+  }
+
+  &:hover {
+    @media (min-width: @tablet-width) {
+      border-bottom: 1px solid @special_grey;
+    }
   }
 }

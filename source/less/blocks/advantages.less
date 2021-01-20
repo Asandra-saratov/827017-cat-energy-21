@@ -46,7 +46,6 @@
 
 
   @media (min-width: @tablet-width) {
-    width: 630px;
     margin: 0;
     flex-direction: row;
     justify-content: space-between;
@@ -77,15 +76,19 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    width: 246px;
+    width: 46%;
     margin: 0;
     padding-left: 0;
     padding-top: 132px;
     padding-bottom: 78px;
+    padding-right: 62px;
+    box-sizing: border-box;
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 135px;
+    padding-right: 0;
+    width: 252px;
   }
 
   &::before {
@@ -186,6 +189,8 @@
 
     @media (min-width: @desktop-width) {
       margin-bottom: 0;
+      margin-left: -5px;
+      margin-right: -5px;
     }
 
     &::before {

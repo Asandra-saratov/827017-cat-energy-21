@@ -122,7 +122,6 @@
         <li class="advantages__item advantages__item--month">
           Уже через месяц наслаждайтесь изменениями к лучшему <br class="advantages__br">вашего питомца!
         </li>
-
       </ul>
     </section>
 
@@ -165,30 +164,34 @@
             <div class="example__image-before">
               <picture>
                 <source media="(min-width: 1440px)"
-                  srcset="img/before-cat-desktop.png 1x, img/before-cat-desktop@2x.png 2x">
+                  srcset="img/cats/before-cat-desktop.png 1x, img/cats/before-cat-desktop@2x.png 2x">
                 <source media="(min-width: 768px)"
-                  srcset="img/before-cat-tablet.png 1x, img/before-cat-tablet@2x.png 2x">
-                <img src="img/before-cat-mobile.png" alt="Толстый кот.">
+                  srcset="img/cats/before-cat-tablet.png 1x, img/cats/before-cat-tablet@2x.png 2x">
+                <img src="img/cats/before-cat-mobile.png" alt="Толстый кот.">
               </picture>
             </div>
             <!--реализация без живого слайдера-->
             <div class="example__image-after">
               <picture>
                 <source media="(min-width: 1440px)"
-                  srcset="img/after-cat-desktop.png 1x, img/after-cat-desktop@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/after-cat-tablet.png 1x, img/after-cat-tablet@2x.png 2x">
-                <img src="img/after-mobile-cat.png" alt="Похудевший кот.">
+                  srcset="img/cats/after-cat-desktop.png 1x, img/cats/after-cat-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/cats/after-cat-tablet.png 1x, img/cats/after-cat-tablet@2x.png 2x">
+                <img src="img/cats/after-mobile-cat.png" alt="Похудевший кот.">
               </picture>
             </div>
           </div>
 
           <div class="example__result-toggle">
-            <button class="example__button" type="button">Было</button>
+            <div class="example__button-wrapper">
+              <button class="example__button" type="button">Было</button>
+            </div>
             <div class="example__toggle">
               <div class="example__green-stripe"></div>
               <div class="example__white-stripe"></div>
             </div>
-            <button class="example__button" type="button">Стало</button>
+            <div class="example__button-wrapper">
+              <button class="example__button" type="button">Стало</button>
+            </div>
           </div>
         </div>
       </div>
@@ -202,9 +205,9 @@
       </div>
       <div class="map__image">
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/location-desktop.png 1x, img/location-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/location-tablet.png 1x, img/location-tablet@2x.png 2x">
-          <img src="img/location-mobile.png" srcset="img/location-mobile@2x.png 2x" alt="Карта с адресом «Cat Energy».">
+          <source media="(min-width: 1440px)" srcset="img/map/location-desktop.png 1x, img/map/location-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/map/location-tablet.png 1x, img/map/location-tablet@2x.png 2x">
+          <img src="img/map/location-mobile.png" srcset="img/map/location-mobile@2x.png 2x" alt="Карта с адресом «Cat Energy».">
         </picture>
       </div>
     </section>
@@ -268,25 +271,7 @@
 
   </footer>
 
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-    navToggle.classList.remove('toggle--nojs');
-
-    navToggle.addEventListener('click', function () {
-      if (navToggle.classList.contains('toggle--closed')) {
-        navToggle.classList.remove('toggle--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navToggle.classList.add('toggle--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-
-  </script>
-
+  <script src="js/nav.js"></script>
 </body>
 
 </html>
