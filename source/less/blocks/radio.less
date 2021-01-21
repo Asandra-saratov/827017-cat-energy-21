@@ -1,8 +1,13 @@
 .radio {
   &:checked {
-    + .radio__label {
+    +.radio__label {
       &::after {
         display: block;
+      }
+
+      &:focus,
+      &:active {
+        opacity: 0.3;
       }
     }
   }
@@ -12,6 +17,7 @@
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 45px;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     padding-left: 60px;
@@ -40,8 +46,8 @@
     content: "";
     display: none;
     position: absolute;
-    width: 13px;
-    height: 13px;
+    width: 14px;
+    height: 14px;
     background: @basic_green;
     border-radius: 50%;
     top: 8px;
@@ -55,5 +61,14 @@
       top: 11px;
       left: 11px;
     }
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border: 1px solid @special_grey-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
