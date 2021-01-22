@@ -84,16 +84,18 @@
       }
     }
 
-    &:first-child::after {
-      @media (min-width: @desktop-width) {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        left: 0;
-        top: 78px;
-        background-color: @basic_white;
-        z-index: 1;
+    &:first-child {
+      &::after {
+        @media (min-width: @desktop-width) {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          left: 0;
+          top: 78px;
+          background-color: @basic_white;
+          z-index: 1;
+        }
       }
     }
   }

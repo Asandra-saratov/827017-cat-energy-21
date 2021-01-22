@@ -42,9 +42,11 @@
     }
   }
 
-  &:hover::before,
-  &:focus::before {
-    border-color: @special_grey-hover;
+  &:hover,
+  &:focus {
+    &::before {
+      border-color: @special_grey-hover;
+    }
   }
 
   &:active {
