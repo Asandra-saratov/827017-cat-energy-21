@@ -268,9 +268,13 @@
     border-color: @special_dark-grey;
   }
 
-  &:invalid:not(:placeholder-shown):not(:focus),
-  &:invalid:not(:placeholder-shown):focus {
-    border-color: @status_error;
+  &:invalid {
+    &:not(:placeholder-shown) {
+      &:not(:focus),
+      &:focus {
+        border-color: @status_error;
+      }
+    }
   }
 
   &--icon-email {
@@ -298,11 +302,15 @@
       }
     }
 
-    &:invalid:not(:placeholder-shown):not(:focus),
-    &:invalid:not(:placeholder-shown):focus {
-      +.form__icon-email {
-        .form__icon-item {
-          stroke: @status_error;
+    &:invalid {
+      &:not(:placeholder-shown) {
+        &:not(:focus),
+        &:focus {
+          +.form__icon-email {
+            .form__icon-item {
+              stroke: @status_error;
+            }
+          }
         }
       }
     }
@@ -325,11 +333,15 @@
       }
     }
 
-    &:invalid:not(:placeholder-shown):not(:focus),
-    &:invalid:not(:placeholder-shown):focus {
-      +.form__icon-phone {
-        .form__icon-item {
-          fill: @status_error;
+    &:invalid {
+      &:not(:placeholder-shown) {
+        &:not(:focus),
+        &:focus {
+          +.form__icon-phone {
+            .form__icon-item {
+              fill: @status_error;
+            }
+          }
         }
       }
     }
