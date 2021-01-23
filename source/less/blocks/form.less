@@ -266,10 +266,11 @@
 
   &:focus {
     border-color: @special_dark-grey;
+  }
 
-    &:invalid {
-      border-color: @status_error;
-    }
+  &:invalid:not(:placeholder-shown):not(:focus),
+  &:invalid:not(:placeholder-shown):focus {
+    border-color: @status_error;
   }
 
   &--icon-email {
@@ -295,12 +296,13 @@
           stroke: @basic_green;
         }
       }
+    }
 
-      &:invalid {
-        +.form__icon-email {
-          .form__icon-item {
-            stroke: @status_error;
-          }
+    &:invalid:not(:placeholder-shown):not(:focus),
+    &:invalid:not(:placeholder-shown):focus {
+      +.form__icon-email {
+        .form__icon-item {
+          stroke: @status_error;
         }
       }
     }
@@ -321,12 +323,13 @@
           fill: @basic_green;
         }
       }
+    }
 
-      &:invalid {
-        +.form__icon-phone {
-          .form__icon-item {
-            fill: @status_error;
-          }
+    &:invalid:not(:placeholder-shown):not(:focus),
+    &:invalid:not(:placeholder-shown):focus {
+      +.form__icon-phone {
+        .form__icon-item {
+          fill: @status_error;
         }
       }
     }
