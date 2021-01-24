@@ -8,18 +8,17 @@
   @media (min-width: @tablet-width) {
     border-top: none;
     border-bottom: 1px solid @special_grey;
-    padding-top: 25px;
+    padding-top: 0;
     padding-right: 38px;
-    padding-bottom: 28px;
+    padding-bottom: 26px;
     padding-left: 38px;
   }
 
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 244px;
-    padding-top: 15px;
     padding-right: 0;
-    padding-bottom: 17px;
+    padding-bottom: 0;
     padding-left: 0;
   }
 }
@@ -28,14 +27,14 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 64% 36%;
-    padding-bottom: 22px;
+    padding-bottom: 20px;
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 52% 48%;
     padding-top: 0;
-    padding-bottom: 0;
-    padding-right: 38px;
+    padding-bottom: 18px;
+    padding-right: 35px;
   }
 }
 
@@ -47,10 +46,17 @@
   text-transform: uppercase;
   margin: 0;
   align-self: center;
-  padding-bottom: 13px;
+  padding-bottom: 11px;
 
   @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
     padding-bottom: 0;
+    padding-top: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 15px;
   }
 }
 
@@ -58,27 +64,43 @@
   font-family: @arial;
   line-height: 14px;
   width: 100%;
-  padding-bottom: 15px;
+  padding-bottom: 12px;
 
   td {
+    padding: 0;
+
     &:nth-child(2n) {
       text-align: right;
+
+      @media (min-width: @tablet-width) {
+        width: 40%;
+      }
+
+      @media (min-width: @desktop-width) {
+        text-align: left;
+        width: 16%;
+      }
     }
   }
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 20px;
-    align-self: center;
-    padding: 0;
+    padding-top: 28px;
+    padding-bottom: 0;
+    text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
   }
 }
 
 .additional-products__link-to-order {
   font-size: 16px;
   line-height: 20px;
-  padding-top: 9px;
-  padding-bottom: 9px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   @media (min-width: @desktop-width) {
     height: 20px;
