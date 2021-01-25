@@ -12,50 +12,54 @@
 }
 
 .gift__wrapper {
-  background-image: url("../img/gift-photo-mobile.png");
+  background-image: url("../img/green-bg/gift-photo-mobile.png");
   background-repeat: no-repeat;
   background-color: @basic_green;
   height: 289px;
   margin-top: 0;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
   background-size: cover;
   background-position: center;
   text-align: center;
   position: relative;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/green-bg/gift-photo-mobile@2x.png");
+  }
+
   @media (min-width: @tablet-width) {
-    background-image: url("../img/gift-photo-tablet.png");
+    background-image: url("../img/green-bg/gift-photo-tablet.png");
     height: 200px;
     margin-bottom: 76px;
     display: flex;
     justify-content: space-between;
-    padding-left: 89px;
+    padding-left: 78px;
     padding-right: 124px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/green-bg/gift-photo-tablet@2x.png");
+    }
   }
 
   @media (min-width: @desktop-width) {
     display: block;
-    background-image: url("../img/gift-photo-desktop.png");
+    background-image: url("../img/green-bg/gift-photo-desktop.png");
     position: absolute;
     height: 289px;
-    bottom: 88px;
-    left: 75.5%;
+    bottom: 85px;
+    left: 75.3%;
     padding: 0;
     margin: 0;
     right: 110px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/green-bg/gift-photo-desktop@2x.png");
+    }
   }
 }
 
 .gift__icon {
-  padding-top: 60px;
-
-  @media (min-width: @tablet-width) {
-    padding-top: 64px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-top: 60px;
-  }
+  padding-top: 57px;
 }
 
 .gift__text {
@@ -65,16 +69,16 @@
   color: @basic_white;
   text-align: center;
   margin: 0;
-  padding-top: 45px;
+  padding-top: 43px;
 
   @media (min-width: @tablet-width) {
     text-align: left;
-    padding-top: 71px;
+    padding-top: 72px;
   }
 
   @media (min-width: @desktop-width) {
     text-align: center;
     padding-left: 0;
-    padding-top: 40px;
+    padding-top: 44px;
   }
 }
