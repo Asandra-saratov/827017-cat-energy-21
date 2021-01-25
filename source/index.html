@@ -163,20 +163,34 @@
           <div class="example__image-wrapper">
             <div class="example__image-before">
               <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/cats/before-cat-desktop.webp 1x, img/cats/before-cat-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/cats/before-cat-tablet.webp 1x, img/cats/before-cat-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/cats/before-cat-mobile.webp 1x, img/cats/before-cat-mobile@2x.webp 2x">
+
                 <source media="(min-width: 1440px)"
                   srcset="img/cats/before-cat-desktop.png 1x, img/cats/before-cat-desktop@2x.png 2x">
                 <source media="(min-width: 768px)"
                   srcset="img/cats/before-cat-tablet.png 1x, img/cats/before-cat-tablet@2x.png 2x">
-                <img src="img/cats/before-cat-mobile.png" srcset="img/cats/before-cat-mobile@2x.png 2x" alt="Толстый кот.">
+                <img src="img/cats/before-cat-mobile.png" srcset="img/cats/before-cat-mobile@2x.png 2x"
+                  alt="Толстый кот.">
               </picture>
             </div>
             <!--реализация без живого слайдера-->
             <div class="example__image-after">
               <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/cats/after-cat-desktop.webp 1x, img/cats/after-cat-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/cats/after-cat-tablet.webp 1x, img/cats/after-cat-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/cats/after-cat-mobile.webp 1x, img/cats/after-cat-mobile@2x.webp 2x">
+
                 <source media="(min-width: 1440px)"
                   srcset="img/cats/after-cat-desktop.png 1x, img/cats/after-cat-desktop@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/cats/after-cat-tablet.png 1x, img/cats/after-cat-tablet@2x.png 2x">
-                <img src="img/cats/after-mobile-cat.png" alt="Похудевший кот.">
+                <source media="(min-width: 768px)"
+                  srcset="img/cats/after-cat-tablet.png 1x, img/cats/after-cat-tablet@2x.png 2x">
+                <img src="img/cats/after-cat-mobile.png" srcset="img/cats/after-cat-mobile@2x.png 2x" alt="Похудевший кот.">
               </picture>
             </div>
           </div>
@@ -205,9 +219,17 @@
       </div>
       <div class="map__image">
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/map/location-desktop.png 1x, img/map/location-desktop@2x.png 2x">
+          <source type="image/webp" media="(min-width: 1440px)"
+            srcset="img/map/location-desktop.webp 1x, img/map/location-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/map/location-tablet.webp 1x, img/map/location-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/map/location-mobile.webp 1x, img/map/location-mobile@2x.webp 2x">
+
+          <source media="(min-width: 1440px)"
+            srcset="img/map/location-desktop.png 1x, img/map/location-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/map/location-tablet.png 1x, img/map/location-tablet@2x.png 2x">
-          <img src="img/map/location-mobile.png" srcset="img/map/location-mobile@2x.png 2x" alt="Карта с адресом «Cat Energy».">
+          <img src="img/map/location-mobile.png" srcset="img/map/location-mobile@2x.png 2x"
+            alt="Карта с адресом «Cat Energy».">
         </picture>
       </div>
     </section>
