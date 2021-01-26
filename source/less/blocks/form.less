@@ -269,8 +269,8 @@
   }
 
   &:invalid {
-    &:not(:placeholder-shown) {
-      &:not(:focus),
+    &:not(:focus) {
+      &:not(:placeholder-shown),
       &:focus {
         border-color: @status_error;
       }
@@ -301,8 +301,8 @@
     }
 
     &:invalid {
-      &:not(:placeholder-shown) {
-        &:not(:focus),
+      &:not(:focus) {
+        &:not(:placeholder-shown),
         &:focus {
           +.form__icon-email {
             stroke: @status_error;
@@ -328,8 +328,9 @@
     }
 
     &:invalid {
-      &:not(:placeholder-shown) {
-        &:not(:focus),
+      &:not(:focus) {
+
+        &:not(:placeholder-shown),
         &:focus {
           +.form__icon-phone {
             fill: @status_error;
