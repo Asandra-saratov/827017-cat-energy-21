@@ -296,9 +296,7 @@
 
     &:focus {
       +.form__icon-email {
-        .form__icon-item {
-          stroke: @basic_green;
-        }
+        stroke: @basic_green;
       }
     }
 
@@ -307,9 +305,7 @@
         &:not(:focus),
         &:focus {
           +.form__icon-email {
-            .form__icon-item {
-              stroke: @status_error;
-            }
+            stroke: @status_error;
           }
         }
       }
@@ -327,9 +323,7 @@
 
     &:focus {
       +.form__icon-phone {
-        .form__icon-item {
-          fill: @basic_green;
-        }
+        fill: @basic_green;
       }
     }
 
@@ -338,9 +332,7 @@
         &:not(:focus),
         &:focus {
           +.form__icon-phone {
-            .form__icon-item {
-              fill: @status_error;
-            }
+            fill: @status_error;
           }
         }
       }
@@ -368,6 +360,8 @@
   height: 14px;
   position: absolute;
   right: 15px;
+  stroke: @special_dark-grey-2;
+  fill: none;
 
   @media (min-width: @tablet-width) {
     right: 19px;
@@ -379,6 +373,7 @@
   height: 20px;
   position: absolute;
   right: 14px;
+  fill: @special_dark-grey-2;
 
   @media (min-width: @tablet-width) {
     right: 18px;

@@ -28,6 +28,13 @@
 }
 
 .social__link {
+  fill: @special_grey-6;
+
+  &:hover,
+  &:focus {
+    fill: @basic_green;
+  }
+
   &:active {
     opacity: 0.33;
   }
@@ -39,13 +46,6 @@
         height: 22px;
       }
     }
-
-    &:hover,
-    &:focus {
-      path {
-        fill: @basic_green;
-      }
-    }
   }
 
   &--instagram {
@@ -55,27 +55,20 @@
         height: 23px;
       }
     }
-
-    &:hover,
-    &:focus {
-      path {
-        fill: @basic_green;
-      }
-    }
   }
 
   &--facebook {
+    stroke: @special_grey-6;
+
+    &:hover,
+    &:focus {
+      stroke: @basic_green;
+    }
+
     svg {
       @media (min-width: @tablet-width) {
         width: 28px;
         height: 33px;
-      }
-    }
-
-    &:hover,
-    &:focus {
-      path {
-        stroke: @basic_green;
       }
     }
   }

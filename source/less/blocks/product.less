@@ -53,6 +53,14 @@
 }
 
 .product__image {
+  img {
+    height: 112px;
+
+    @media (min-width: @tablet-width) {
+      height: auto;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     position: absolute;
     padding: 0;
