@@ -1,15 +1,20 @@
-.radio {
+.radio__input {
+  display: none;
+
   &:checked {
     +.radio__label {
       &::after {
         display: block;
       }
 
-      &:focus,
       &:active {
         opacity: 0.3;
       }
     }
+  }
+
+  &:focus {
+    color: black;
   }
 }
 

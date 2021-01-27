@@ -1,4 +1,19 @@
 .checkbox {
+  padding-bottom: 12px;
+
+  @media (min-width: @tablet-width) {
+    width: 48.5%;
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 20%;
+  }
+}
+
+.checkbox__input {
+  display: none;
+
   &:checked {
     +.checkbox__label {
       &::before {
